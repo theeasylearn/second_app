@@ -28,11 +28,14 @@ class _WrapWidgetState extends State<WrapWidget>
           title: Text("Wrap Widget Example"),
         ),
         body: Material(
-          child: SingleChildScrollView(
+          child: SizedBox(
+            width: double.infinity,
+            height: 600,
             child: Wrap(
               spacing: 10,
               runSpacing: 10,
-              alignment: WrapAlignment.end,
+              alignment: WrapAlignment.spaceEvenly,
+              runAlignment: WrapAlignment.spaceBetween,
               children: [
                 MyContainer('1'),
                 MyContainer('2'),

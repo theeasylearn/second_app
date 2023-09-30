@@ -1,9 +1,8 @@
 import 'package:cherry_toast/cherry_toast.dart';
 import 'package:cherry_toast/resources/arrays.dart';
 import 'package:flutter/material.dart';
-// import 'menu_demo_exmple.dart';
-import 'gridview_example_1.dart';
+import 'grid_view_example_2.dart';
 void main() {
-  GridViewExample example = new GridViewExample();
+  GridViewExample2 example = new GridViewExample2();
   runApp(example);
 }

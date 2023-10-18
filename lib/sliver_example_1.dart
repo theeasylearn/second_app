@@ -98,11 +98,11 @@ class SliverExample extends StatelessWidget {
                         children: [
                           CircleAvatar(backgroundImage: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/220px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png"),),
                           Padding(
-                            padding: EdgeInsets.only(left:20),
+                            padding: EdgeInsets.only(left:10),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(Countries[index].name,textScaleFactor: 1.5,textDirection: TextDirection.ltr,),
+                                FittedBox(fit: BoxFit.fitWidth,child: Text(Countries[index].name),),
                                 Text(Countries[index].capital,textDirection: TextDirection.ltr,),
                               ],
                             ),
@@ -114,10 +114,10 @@ class SliverExample extends StatelessWidget {
           },childCount: Countries.length),
 
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            crossAxisSpacing: 10,
+            crossAxisCount: 2,
+            crossAxisSpacing: 5,
             mainAxisSpacing: 10,
-              childAspectRatio: 4
+              childAspectRatio: 2
           ),)
         ],
       ),
